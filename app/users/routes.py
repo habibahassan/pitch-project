@@ -41,10 +41,10 @@ def login():
             flash('Login Unsuccessful. Please check password and email', 'danger')
     return render_template('login.html',title = 'Login', form = form)
 
-# @users.route("/logout")
-# def logout():
-#     logout_user()
-#     return redirect(url_for('main.home'))
+@users.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('main.home'))
 
 # @users.route("/account", methods= ['GET', 'POST'])
 # @login_required

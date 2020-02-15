@@ -1,24 +1,22 @@
 {% extends 'base.html'%}
 {% block content %}
-  <h1>HOME PAGE!</h1>
-    <article class="media content-section">
+    <article class="media post-section">
       <img class = "rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/'+ post.author.image_file) }}" alt="">
   <div class="media-body">
-    <div class="article-metadata">
+    <div class="post-metadata">
       <a class="mr-2" href="{{url_for('users.user_posts', username = post.author.username)}}">{{ post.author.username }}</a>
       <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
       {% if post.author == current_user %}
         <div class="">
-          <a class="btn btn-secondary btn-sm m-1"href="{{url_for('posts.update_post', post_id = post.id)}}">Update</a>
+          <a class="btn btn-secondary btn-sm m-1"href="{{url_for('posts.update_post', post_id = post.id)}}">Update Post</a>
           <button type="button" class = "btn btn-danger btn-sm m-1" data-toggle="modal" data-target="#deleteModal" name="button">Delete</button>
         </div>
       {% endif %}
     </div>
-    <h2 class="article-title">{{ post.title }}</h2>
-    <p class="article-content">{{ post.content }}</p>
+    <h2 class="post-title">{{ post.title }}</h2>
+    <p class="post-content">{{ post.content }}</p>
   </div>
   </article>
-    <!-- Modal -->
   <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -38,5 +36,5 @@
       </div>
     </div>
   </div>
-
+    
 {% endblock %}

@@ -1,10 +1,10 @@
 {% extends 'base.html'%}
 {% block content %}
-<div class="content-section">
+<div class="content-section pt-5">
   <form class="" action="" method="POST">
     {{ form.hidden_tag() }}
     <fieldset class="form-group">
-      <legend class="border-bottom mb-4">Join Today</legend>
+      <legend class="border-bottom mb-4">Sign up for ammazing service</legend>
       <div class="form-group">
         {{form.username.label(class="form-control-label")}}
 
@@ -73,6 +73,6 @@
 </div>
 <div class="border-top pt-3">
   <small class="text-muted">
-  Already Have an Account? <a class="ml-2" href="{{url_for('users.login')}}">Sign In</a></small>
+  Do you already have an account? <a class="ml-2" href="{{url_for('users.login')}}">Sign In</a></small>
 </div>
 {%endblock%}

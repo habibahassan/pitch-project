@@ -67,35 +67,4 @@
   .account-heading {
     font-size: 2.5rem;
   }
-  .welcome-page {
-    background-image: url("https://images.pexels.com/photos/374147/pexels-photo-374147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
-
-}
-
-.welcome {
-    text-align: center;
-    padding-top: 15rem;
-    padding-bottom: 22rem;
-}
-
-.welcome h1 {
-    font-family: 'Bilbo Swash Caps';
-    font-size: 150px;
-    color: white;
-}
-
-.welcome h2 {
-    font-family: 'Cinzel';
-    font-size: 30px;
-    color: white;
-}
-
-.welcome a {
-    font-family: 'Mukta';
-    width: 140px;
-}
-
-.welcome a:hover {
-    color: white;
-}
+  

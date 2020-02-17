@@ -39,10 +39,10 @@ To run the tests for the class files:
 * Flask
 ## Behaviour driven development/ Specifications
 * Behaviour	Input	Output
-Post pitch	Pitch is saved in a database	Post from database
-Comment on pitch	Leave a comment	Comment saved for display
-Upvote or downvote pitch	Click on like or dislike	Reflects on likes and dislikes
-Login and authenticate	Email address and password	Saved and used for authentication
+* Post pitch	Pitch is saved in a database	Post from database
+* Comment on pitch	Leave a comment	Comment saved for display
+* Upvote or downvote pitch	Click on like or dislike	Reflects on likes and dislikes
+* Login and authenticate	Email address and password	Saved and used for authentication
 ## Support and contact information
 Feel free to reach out to the developer at:
   * 0725142516
